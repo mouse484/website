@@ -460,14 +460,29 @@ const IndexPage: React.SFC<{}> = () => (
                     <header role="banner" className="banner">
                         <div className="banner__text-box">
                             <h1>
+                                {/*
                                 Are You Ready-To-Code?
+                                */}
+                                コーディングの用意はいい？
+                                {/*
                                 <span>Start Instantly. Anywhere.</span>
+                                */}
+                                <span>どこでも。瞬時に起動。</span>
                             </h1>
+                            {/*
                             <p>Gitpod launches ready-to-code dev environments<br /> for your GitHub or GitLab project with a single click.</p>
+                            */}
+                            <p>GitpodはワンクリックでGithub・GitLabプロジェクトの<br /> コーディングをすぐに開始できる開発環境を起動します。</p>
                             <div className="btn-wrapper">
+                                {/*
                                 <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">Let's Try It!</a>
-                                <br aria-hidden={true}/>
+                                */}
+                                <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">試してみよう！</a>
+                                <br aria-hidden={true} />
+                                {/*
                                 <Link to="/self-hosted/" className="btn">Host Yourself</Link>
+                                */}
+                                <Link to="/self-hosted/" className="btn">自分でホストする</Link>
                             </div>
                         </div>
                         <div className="banner__screenshot-container">
@@ -571,7 +586,7 @@ const IndexPage: React.SFC<{}> = () => (
                                 <p>Read more about <a href="/docs/50_ide/">Theia</a></p>
                             </div>
                             <div className="why-gitpod__img-container">
-                                <object tabIndex={-1} 
+                                <object tabIndex={-1}
                                     data={FullDevEnvironments}
                                     className="why-gitpod__img why-gitpod__img--full-dev-env" />
                             </div>
